@@ -5,15 +5,14 @@
 [![reward](https://make.fun/badge/best-game-01/arya161100/shutterwild/reward.svg)](https://make.fun/bounty/best-game-01?utm_source=github&utm_medium=readme&utm_campaign=best-game-01)
 
 **SHUTTERWILD — a wildlife photography game.** Pan the camera across a living valley,
-wait for the moment, and take the shot. A complete browser game: 7 days, 6 species,
-a field guide to fill before the sun sets, film that runs out, and a golden hour that
-pays ×1.5.
+wait for the perfect moment, and take the shot. A complete browser game: 7 days, 6 species,
+a field guide to fill before the sun sets, limited film, and a golden hour that pays ×1.5.
 
 ## How to play
 
 - **Mouse or A / D** — pan the camera across the valley
 - **Wheel or + / −** — zoom the lens (each animal has an ideal zoom: focus matters)
-- **SPACE or click** — take a photograph (12 exposures a day — a wasted shot is gone)
+- **SPACE or click** — take a photograph (14 exposures a day — a wasted shot is gone)
 - **P** — pause, **R** — restart the day, **M** — mute, **Enter** — confirm
 
 Each day the field guide asks for three photographs — a deer grazing, a heron fishing,
