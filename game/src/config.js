@@ -9,37 +9,37 @@ export const GROUND_Y = 596;
 export const STEP = 1 / 60;
 
 /** A day lasts this long (seconds of sun) before the light is gone. */
-export const DAY_SECONDS = 150;
+export const DAY_SECONDS = 165;
 /** Exposures (shots) a day; a wasted shot is gone for good. */
-export const FILM_PER_DAY = 12;
+export const FILM_PER_DAY = 14;
 /** The last seconds of a day count as golden hour: light bonus on every shot. */
-export const GOLDEN_HOUR_SECONDS = 35;
+export const GOLDEN_HOUR_SECONDS = 40;
 /** How many checklist targets each day asks for. */
 export const TARGETS_PER_DAY = 3;
 
 /** Camera: how fast it pans, and the zoom range (1 = whole valley height in view). */
 export const CAMERA = {
-  panSpeed: 900,
-  mousePanEdge: 90,
+  panSpeed: 1050,
+  mousePanEdge: 80,
   zoomMin: 1,
-  zoomMax: 2.4,
-  zoomStep: 0.25,
+  zoomMax: 2.6,
+  zoomStep: 0.2,
 };
 
 /** Scoring bands for one photograph (points before the golden-hour multiplier). */
 export const SCORE = {
-  framingMax: 100,
-  focusMax: 100,
-  momentBonus: 100,
-  perfectAt: 240,
-  greatAt: 170,
-  goodAt: 100,
+  framingMax: 120,
+  focusMax: 120,
+  momentBonus: 140,
+  perfectAt: 280,
+  greatAt: 200,
+  goodAt: 120,
   /** A shot with no animal in frame, or hopelessly out of focus, scores this. */
   emptyShot: 0,
 };
 
 /** Sun height (0 = horizon, 1 = noon) at which the light turns golden. */
-export const GOLDEN_SUN = 0.32;
+export const GOLDEN_SUN = 0.28;
 
 export const PALETTE = {
   ink: '#1d2733',
@@ -76,32 +76,32 @@ export const BEST_KEY = 'shutterwild.best';
 export const SPECIES = {
   deer: {
     name: 'Deer', plural: 'deer', size: 150, idealZoom: 1.5, rarity: 0.1,
-    move: 'walk', speed: 26, moments: ['graze', 'drink', 'leap'], points: 100,
+    move: 'walk', speed: 28, moments: ['graze', 'drink', 'leap'], points: 110,
     coat: '#b98a5a', belly: '#e8d3b3', antler: '#6b4a2f',
   },
   hare: {
     name: 'Hare', plural: 'hares', size: 62, idealZoom: 2.1, rarity: 0.05,
-    move: 'walk', speed: 70, moments: ['leap', 'graze'], points: 80,
+    move: 'walk', speed: 78, moments: ['leap', 'graze'], points: 90,
     coat: '#9a8a76', belly: '#e5dccb', antler: null,
   },
   fox: {
     name: 'Fox', plural: 'foxes', size: 110, idealZoom: 1.8, rarity: 0.3,
-    move: 'walk', speed: 55, moments: ['leap', 'drink'], points: 140,
+    move: 'walk', speed: 58, moments: ['leap', 'drink'], points: 150,
     coat: '#d2691e', belly: '#f6ead6', antler: null,
   },
   heron: {
     name: 'Heron', plural: 'herons', size: 120, idealZoom: 1.7, rarity: 0.25,
-    move: 'wade', speed: 14, moments: ['fish', 'flight'], points: 150,
+    move: 'wade', speed: 16, moments: ['fish', 'flight'], points: 160,
     coat: '#dfe6ea', belly: '#ffffff', antler: null,
   },
   owl: {
     name: 'Owl', plural: 'owls', size: 95, idealZoom: 1.9, rarity: 0.45,
-    move: 'perch', speed: 0, moments: ['wings', 'flight'], points: 170,
+    move: 'perch', speed: 0, moments: ['wings', 'flight'], points: 180,
     coat: '#7a5c43', belly: '#d9c7a7', antler: null,
   },
   eagle: {
     name: 'Eagle', plural: 'eagles', size: 170, idealZoom: 1.4, rarity: 0.6,
-    move: 'soar', speed: 120, moments: ['soar', 'dive'], points: 200,
+    move: 'soar', speed: 130, moments: ['soar', 'dive'], points: 220,
     coat: '#4a3226', belly: '#8a6b4a', antler: null,
   },
 };
